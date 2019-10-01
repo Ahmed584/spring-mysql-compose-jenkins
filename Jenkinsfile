@@ -27,8 +27,6 @@ pipeline {
                // sh 'docker container stop $(docker container ls -aq)'
             sh'''cd spring-mysql-compose-jenkins
              ls
-             docker-compose down --rmi all
-             
                 docker-compose up -d'''
              sh 'docker ps'
              sh 'docker images'
