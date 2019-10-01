@@ -12,7 +12,6 @@ services:
    restart: always
    volumes:
      - /data/mysql1
-     
   spring-boot-jpa-app:
     image: spring-boot-jpa-image
     build:
